@@ -32,31 +32,17 @@ ReactJS: <strong>Similar behavior achieved through HOCs or composition, allowing
           <h1>Same principle can be applied using Component Composition</h1>
           <p>
           Component Composition: Creating base components that define a general structure and <strong>allowing child components to fill in the details. </strong>
-          I want real time use cases for this pattern in reactjs using functional components.
+          
           </p>
           <h1>Code Reusability</h1>
           <p>
             Advantage: This pattern encourages the reuse of code by defining a common structure and behavior that can be shared across different components.
 
-            Explanation: By abstracting common logic into higher-order components (HOCs), custom hooks, or render props, you avoid duplicating code 
+            By abstracting common logic into higher-order components (HOCs), custom hooks, or render props, you avoid duplicating code 
             and make it easier to maintain. 
           </p>
-          <h1>Encapsulation and Abstraction</h1>
-          <p>
           
-Advantage: It provides a way to encapsulate complex logic and abstract it from the main application logic.
-
-Explanation: Complex operations or behaviors can be abstracted into reusable hooks or HOCs, making the main components simpler 
-and more focused on their primary responsibilities.
-          </p>
-          <h1>ASeparation of Concerns</h1>
-          <p>
           
-Advantage: This pattern promotes a clear separation of concerns by isolating specific functionality and responsibilities.
-
-Explanation: Each component or hook is responsible for a specific aspect of the application, making it easier to understand, test, and maintain. 
-The parent component deals with the general layout or structure, while child components focus on detailed implementations.
-          </p>
           
           <h1>Use Cases:</h1>
           <strong>
@@ -76,7 +62,15 @@ The parent component deals with the general layout or structure, while child com
               title="Customizable List Component with Render Props"
               description="A list component provides a general structure for rendering a list, and child components can specify how each item is rendered."
             />
-
+        <div className='description-container'>
+                    <p>
+                    TemplateList Component: List component provides a template for rendering a list. It <strong>does not know or care</strong> about 
+                    the specifics of how each item should be rendered.
+                    </p>
+                    <p>
+                    Concrete Implementations: The TasksList Component and Userlist Component each define their <strong>own list</strong> style representations.
+                    </p>
+                  </div>
           </div>
           <div className="pattern-code">
             <pre>

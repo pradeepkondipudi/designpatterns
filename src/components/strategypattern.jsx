@@ -60,7 +60,13 @@ const StrategyPattern = () => (
                   title="Payment Processing"
                   description="Different payment methods require different processing strategies."
                 />
-    
+              <div className='description-container'>
+            <p>
+            Strategy : No interface is needed in Reactjs as we have components. <strong>Composition</strong> is preffered over <strong>inheritance.</strong>
+            </p>
+            <p>ConcreteStrategy: PayPalPayment, CreditCardPayment, BitCoinPayment. <strong>These are strategy components</strong></p>
+            <p>Context: Set the strategy according to the user selection <strong>(PaymentComponent.js).</strong></p>
+          </div>
               </div>
               <div className="pattern-code">
                 <pre>
