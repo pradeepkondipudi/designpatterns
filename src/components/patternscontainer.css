@@ -1,0 +1,62 @@
+/* src/components/PatternContainer.css */
+
+.pattern-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pattern-description {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .pattern-output {
+    width: 50%;
+    padding-right: 1rem;
+  }
+  
+  .pattern-code {
+    width: 50%;
+    padding-left: 1rem;
+    border-left: 1px solid #ccc;
+    overflow-x: auto;
+  }
+  
+  pre {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .description-container{
+    padding: 32px;
+    line-height: 150%;
+    
+  }
+
+  .description-container strong{
+    color: coral;
+  }
+
+  .description-container p{
+    padding: 16px 32px;
+    font-size: 32px;
+  }
+
+  .description-container img{
+    display: flex;
+    margin: auto;
+    width: 480px;
+  }
+  
