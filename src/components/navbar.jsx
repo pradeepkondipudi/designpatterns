@@ -35,16 +35,17 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="navbar-item">
+          <Link to="/adaptar" className="navbar-link">
+            <MdLayers className="navbar-icon" /> Adaptar Pattern
+          </Link>
+        </li>
+        <li className="navbar-item">
           <Link to="/factory" className="navbar-link">
             <MdFactory className="navbar-icon" /> Factory Pattern
           </Link>
         </li>
         
-        <li className="navbar-item">
-          <Link to="/adaptar" className="navbar-link">
-            <MdLayers className="navbar-icon" /> Adaptar Pattern
-          </Link>
-        </li>
+        
         
         
       </ul>

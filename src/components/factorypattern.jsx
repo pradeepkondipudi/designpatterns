@@ -60,7 +60,11 @@ const FactoryPattern = () => {
               description="When building a form with various field types (text input, checkbox, radio button, etc.), 
               a factory can generate the correct component type based on the field’s metadata."
             />
-
+          <div className='description-container'>
+            <p>
+            Component Factory : It is used to create <strong>instances of components.</strong>
+            </p>
+          </div>
           </div>
           <div className="pattern-code">
             <pre>

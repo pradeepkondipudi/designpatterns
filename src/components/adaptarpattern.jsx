@@ -60,7 +60,14 @@ const AdaptarPattern = () => (
               title="Integrating Chart Libraries"
               description="Chart libraries often require data in specific formats."
             />
-
+        <div className='description-container'>
+          <p>
+          Data Transformation: ChartAdapter serves as a layer that <strong>transforms the input data to the format expected</strong> by the child component. 
+          This can be particularly useful when you have different data formats coming from various sources and you want to standardize them before rendering a chart.</p>
+        <p>Reusability: By using React.cloneElement, you can easily <strong>wrap any chart component and transform the data</strong> without modifying the original component. 
+          This promotes reusability and separation of concerns.
+          </p>
+        </div>
           </div>
           <div className="pattern-code">
             <pre>
@@ -74,6 +81,26 @@ const AdaptarPattern = () => (
               
                 return React.cloneElement(children, { data: chartData });
               };
+              
+              const data = [
+                { x: 1, y: 10 },
+                { x: 2, y: 20 },
+                { x: 3, y: 30 }
+              ];
+              
+              const Chart = ({ data }) => (
+                <div>
+                  {data.map(point => (
+                    <div key={point.xValue}>
+                      x: {point.xValue}, y: {point.yValue}
+                    </div>
+                  ))}
+                </div>
+              );
+              
+              <ChartAdapter data={data}>
+                <Chart />
+              </ChartAdapter>
               
                `}
               </code>
